@@ -16,6 +16,57 @@
     <!-- استدعاء ملف التنسيق الموحد الفاخر -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- تنسيقات جمالية مخصصة للواجهة لبروز الخطوط وتسهيل الاتصال بالجوال -->
+    <style>
+        .hero-content h1 {
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.95);
+            font-size: 1.95rem;
+            font-weight: 900;
+            letter-spacing: -0.5px;
+            color: #ffffff !important;
+        }
+        .hero-content p {
+            text-shadow: 0 3px 8px rgba(0, 0, 0, 0.95);
+            color: #f8fafc !important; /* اللون الأبيض الناصع فائق البروز والوضوح للقراءة */
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 25px;
+        }
+        .badge {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: 800;
+        }
+        
+        /* زر اتصال مخصص ومطور فائق التباين والبروز (إطار سميك وظل عميق) */
+        .btn-luxury-phone {
+            background-color: var(--call-red) !important; /* اللون الأحمر الفخم والمميز الجاذب للانتباه */
+            color: #ffffff !important;
+            border: 3px solid #ffffff !important; /* إطار أبيض عريض 3px للبروز والوضوح التام */
+            font-weight: 900 !important;
+            font-size: 1.15rem !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8) !important; /* ظل داكن قوي ليفصل الزر عن الخلفية */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9) !important; /* ظل بارز للنصوص */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 35px;
+            border-radius: 30px;
+            transition: var(--transition-speed) ease;
+            text-decoration: none;
+            direction: ltr;
+        }
+        .btn-luxury-phone:hover {
+            transform: scale(1.04);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.95) !important;
+        }
+
+        @media (min-width: 769px) {
+            .hero-content h1 { font-size: 2.8rem; }
+            .hero-content p { font-size: 1.15rem; }
+        }
+    </style>
+
     <!-- [ملاحظة]: تتبع تحويلات إعلانات جوجل يتم تحميله ديناميكياً وعبر النقرات من ملف script.js الموحد -->
 </head>
 <body>
@@ -58,15 +109,16 @@
         </div>
     </header>
 
-    <!-- 3. بانر الصفحة الداخلي الفخم والملائم للجوال -->
-    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80');">
+    <!-- 3. بانر الصفحة الداخلي الفخم والملائم للجوال (مربوط بصورتك الحقيقية للأشغال ومعتم قسرياً لبروز النصوص) -->
+    <section class="hero" style="background-image: linear-gradient(rgba(7, 10, 19, 0.94), rgba(7, 10, 19, 0.96)), url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK7z4E-vljvJVxBJcgGUQUVoUWZm-TLxxjIggVGYfyZFQDgTe5_yb6BxD5S6nSfqYip27LwEjFkyLT3Bo6VBwxzuv3zqhToC0GS0Qc-a7V1LsscqEXMlg3DlQpv_RUD86ni6YXlS0eKLT9IUgoJ1XBM2kUBJYmVp4wfHD4etXgvt7ktkTq4r2SdSweL-I/s1000-rw/IMG-20231012-WA0103.jpg');">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
             <span class="badge">تثبيت آمن ودقيق بضمان معتمد 10 سنوات</span>
             <h1>تركيب مظلات السيارات والحدائق بالرياض</h1>
             <p>تظليل فاخر يحمي ممتلكاتك من لهيب الشمس ويضفي لمسة جمالية راقية على منزلك</p>
             <div class="hero-actions">
-                <a href="tel:0536491079" class="btn btn-gold btn-lg"><i class="fa-solid fa-phone"></i> اتصل الآن: 0536491079</a>
+                <!-- زر الاتصال المطور فائق البروز والوضوح -->
+                <a href="tel:0536491079" class="btn-luxury-phone"><i class="fa-solid fa-phone"></i> اتصل الآن: 0536491079</a>
             </div>
         </div>
     </section>
@@ -81,28 +133,28 @@
                     <h2 style="color: var(--main-color); font-weight: 900; margin-bottom: 20px;">تصاميم عصرية وخامات مقاومة لشمس العاصمة</h2>
                     <p class="desc-text" style="text-align: right; text-align-last: right;">نقدم خدمات تفصيل وتوريد وتركيب المظلات السكنية والتجارية بمواصفات قياسية فائقة في كافة أحياء مدينة الرياض. نحن ندرك أن طبيعة المناخ شديد الحرارة في منطقة نجد تتطلب حلول تظليل متينة للغاية لحماية السيارات والحدائق والجلسات الخارجية من التلف والبهتان وضمان عمر افتراضي طويل للمظلة.</p>
                     
-                    <!-- عرض مميزات المظلات بالصور المناسبة والخفيفة جداً للتحميل -->
+                    <!-- عرض مميزات المظلات بالصور الحقيقية الفخمة من بلوجر المجهزة والمحولة لـ WebP تلقائياً -->
                     <div class="grid" style="gap: 25px; margin-top: 30px;">
                         
-                        <!-- نوع 1: مظلات سيارات -->
+                        <!-- نوع 1: مظلات سيارات (مربوط بصورتك الحقيقية لتركيب المظلة) -->
                         <div style="background: var(--bg-light); padding: 15px; border-radius: 8px; border-right: 4px solid var(--gold-color);">
                             <h4 style="color: var(--main-color); font-weight: 800; margin-bottom: 10px;">1. مظلات سيارات PVC كوري وألماني أصلي:</h4>
                             <p class="desc-text" style="text-align: right; text-align-last: right; font-size: 0.9rem; margin-bottom: 15px;">نستخدم أفضل أنواع قماش الـ PVC عالي الكثافة (سماكة 1100 جرام) المقاوم للاشتعال وعوامل التعرية، مما يوفر عزل كامل لدرجات الحرارة ومياه الأمطار بنسبة 100% ويحافظ على دهان سيارتك.</p>
-                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="مظلات سيارات بالرياض" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px;">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdt5e_fmyix3-ETygKVGicwZhdh3Cp-Ka6o7Vt6wWq3aKmpzplLgnZsp5F64f7oE66SyX7TZsdoITOX1sfsrpldP0BzfI9wsm_nG3sZGAc10mHyMg8JIgX2VCerLFsOJC2PwvJnGku-Mlv1PrX9tH7oyvk_WzLRXp6nd8LjP6ff3K5opRo2Jlw4R8GHuY/s600-rw/IMG-20231012-WA0048.jpg" alt="مظلات سيارات بالرياض" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: var(--shadow);">
                         </div>
 
-                        <!-- نوع 2: برغولات وجلسات حدائق -->
+                        <!-- نوع 2: برغولات وجلسات حدائق (مربوط بصورتك الحقيقية للبرغولة) -->
                         <div style="background: var(--bg-light); padding: 15px; border-radius: 8px; border-right: 4px solid var(--gold-color);">
                             <h4 style="color: var(--main-color); font-weight: 800; margin-bottom: 10px;">2. مظلات وجلسات حدائق خشبية وحديدية فخمة:</h4>
                             <p class="desc-text" style="text-align: right; text-align-last: right; font-size: 0.9rem; margin-bottom: 15px;">برغولات ومظلات من الخشب البلاستيكي المعالج المقاوم للأمطار والتسوس والحديد المشغول الأنيق لتمنح فناء حديقتك طابعاً كلاسيكياً دافئاً وفاخراً لتستمتع بأجمل الجلسات العائلية.</p>
-                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="مظلات حدائق بالرياض" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px;">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8_nDt9QkkV-NypUabO_x-9_pg9QVjSmWh6GDWUfQG3m1QZ-HPd0SDBMmNlWUH0NnDklX7arGTxl7JT-7994xpAGmwXmRtboQCSoj-m3X3p7lc9Cazr-SRiQ2jOVvccNfF8tpziTSzmWfTIfeOF_IbkE9zcjFSCK5d-OEK0pdGWx22rfwncX7swRv6S6o/s600-rw/IMG-20231012-WA0054.jpg" alt="مظلات حدائق بالرياض" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: var(--shadow);">
                         </div>
 
-                        <!-- نوع 3: لكسان ومداخل وفلل -->
+                        <!-- نوع 3: لكسان ومسابح (مربوط بصورتك الحقيقية لمظلة الحوش واللكسان) -->
                         <div style="background: var(--bg-light); padding: 15px; border-radius: 8px; border-right: 4px solid var(--gold-color);">
-                            <h4 style="color: var(--main-color); font-weight: 800; margin-bottom: 10px;">3. مظلات لكسان الشفافة والملونة ضد الكسر:</h4>
+                            <h4 style="color: var(--main-color); font-weight: 800; margin-bottom: 10px;">3. مظلات لكسان ومظلات احواش ومسابح:</h4>
                             <p class="desc-text" style="text-align: right; text-align-last: right; font-size: 0.9rem; margin-bottom: 15px;">ألواح مصنوعة من البولي كربونيت المقاوم للصدمات، تمنح حماية متكاملة من الرياح والأتربة والأمطار مع إمكانية تمرير الضوء بتأثيرات ساحرة وجذابة للمسابح ومداخل الملاحق والفلل.</p>
-                            <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=600&q=80" alt="مظلات لكسان ومسابح بالرياض" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px;">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHIUM7AXqgRu8Ck1sErufrA9btw4HxkBzON9XqmgClHmJ8Npwx6_yHcHtFAz-tqePwLgceTF_yLNQ8Y9EZddnlmme3WHelen9Mfr27hOrNRHvXsnjLyONUUu72QHtKSUuUCCHS7fCp479nDTnBVivF4LC6J_ZgoiVIEMDfoIjLdeobpqEe2rrP1Z4vrkk/s600-rw/IMG-20231016-WA0031.jpg" alt="مظلات لكسان ومسابح بالرياض" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: var(--shadow);">
                         </div>
 
                     </div>
@@ -167,11 +219,11 @@
                 </div>
             </div>
             
-            <!-- شريط الحقوق ورابط المطور الرعد التقني للواتساب -->
+            <!-- شريط الحقوق ورابط المطور الرعد التقني للواتساب بالمعرف الصحيح الجديد -->
             <div class="footer-bottom">
                 <p>جميع الحقوق محفوظة © 2026 مقاول حداد الرياض.</p>
                 <p>تطوير: 
-                    <a href="https://wa.me/966573589687?text=مرحباً%20الرعد%20التقني%20أود%20الاستفسار%20عن%20خدماتكم" target="_blank" rel="noopener noreferrer" class="dev-link">
+                    <a href="https://wa.me/966578539687?text=مرحباً%20الرعد%20التقني%20أود%20الاستفسار%20عن%20خدماتكم" target="_blank" rel="noopener noreferrer" class="dev-link">
                         الرعد التقني <i class="fab fa-whatsapp"></i>
                     </a>
                 </p>
