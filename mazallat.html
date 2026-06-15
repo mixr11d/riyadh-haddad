@@ -7,11 +7,17 @@
     <meta name="description" content="نوفر تركيب مظلات سيارات PVC كورية وألمانية، مظلات حدائق خشبية وحديدية، ومظلات لكسان بالرياض. خامات معالجة ومقاومة للشمس والرياح مع ضمان 10 سنوات.">
     <meta name="keywords" content="مظلات الرياض, مظلات سيارات, مظلات حدائق, مظلات لكسان, برغولات حديد, تظليل مواقف سيارات بالرياض">
     
+    <!-- تحسين LCP: تحميل مسبق لصورة الخلفية للبانر الرئيسي لزيادة سرعة الفتح -->
+    <link rel="preload" as="image" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK7z4E-vljvJVxBJcgGUQUVoUWZm-TLxxjIggVGYfyZFQDgTe5_yb6BxD5S6nSfqYip27LwEjFkyLT3Bo6VBwxzuv3zqhToC0GS0Qc-a7V1LsscqEXMlg3DlQpv_RUD86ni6YXlS0eKLT9IUgoJ1XBM2kUBJYmVp4wfHD4etXgvt7ktkTq4r2SdSweL-I/s1000-rw/IMG-20231012-WA0103.jpg">
+
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- تحميل غير مانع لعرض الأيقونات لتسريع ظهور الصفحة (Non-blocking FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     
     <!-- استدعاء ملف التنسيق الموحد الفاخر -->
     <link rel="stylesheet" href="style.css">
@@ -109,82 +115,91 @@
         </div>
     </header>
 
-    <!-- 3. بانر الصفحة الداخلي الفخم والملائم للجوال (مربوط بصورتك الحقيقية للأشغال ومعتم قسرياً لبروز النصوص) -->
-    <section class="hero" style="background-image: linear-gradient(rgba(7, 10, 19, 0.94), rgba(7, 10, 19, 0.96)), url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK7z4E-vljvJVxBJcgGUQUVoUWZm-TLxxjIggVGYfyZFQDgTe5_yb6BxD5S6nSfqYip27LwEjFkyLT3Bo6VBwxzuv3zqhToC0GS0Qc-a7V1LsscqEXMlg3DlQpv_RUD86ni6YXlS0eKLT9IUgoJ1XBM2kUBJYmVp4wfHD4etXgvt7ktkTq4r2SdSweL-I/s1000-rw/IMG-20231012-WA0103.jpg');">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <span class="badge">تثبيت آمن ودقيق بضمان معتمد 10 سنوات</span>
-            <h1>تركيب مظلات السيارات والحدائق بالرياض</h1>
-            <p>تظليل فاخر يحمي ممتلكاتك من لهيب الشمس ويضفي لمسة جمالية راقية على منزلك</p>
-            <div class="hero-actions">
-                <!-- زر الاتصال المطور فائق البروز والوضوح -->
-                <a href="tel:0536491079" class="btn-luxury-phone"><i class="fa-solid fa-phone"></i> اتصل الآن: 0536491079</a>
-            </div>
-        </div>
-    </section>
+    <!-- [تعديل إمكانية الوصول]: تم إضافة وسم main لحل مشكلة معلم المستند وتسهيل قراءته من محركات البحث وقارئات الشاشة -->
+    <main id="main-content">
 
-    <!-- 4. تفاصيل الخدمة (مقسمة لعمودين تترتب تلقائياً تحت بعضها في الجوال) -->
-    <section class="section-padding bg-light">
-        <div class="container">
-            <div class="grid grid-2">
-                
-                <!-- العمود الأول: تفاصيل العمل والنصوص التسويقية القوية والداعمة للسيو وقوقل ادز -->
-                <div class="why-us-box">
-                    <h2 style="color: var(--main-color); font-weight: 900; margin-bottom: 20px;">تصاميم عصرية وخامات مقاومة لشمس العاصمة</h2>
-                    <p class="desc-text" style="text-align: right; text-align-last: right;">نقدم خدمات تفصيل وتوريد وتركيب المظلات السكنية والتجارية بمواصفات قياسية فائقة في كافة أحياء مدينة الرياض. نحن ندرك أن طبيعة المناخ شديد الحرارة في منطقة نجد تتطلب حلول تظليل متينة للغاية لحماية السيارات والحدائق والجلسات الخارجية من التلف والبهتان وضمان عمر افتراضي طويل للمظلة.</p>
+        <!-- 3. بانر الصفحة الداخلي الفخم والملائم للجوال -->
+        <section class="hero" style="background-image: linear-gradient(rgba(7, 10, 19, 0.94), rgba(7, 10, 19, 0.96)), url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK7z4E-vljvJVxBJcgGUQUVoUWZm-TLxxjIggVGYfyZFQDgTe5_yb6BxD5S6nSfqYip27LwEjFkyLT3Bo6VBwxzuv3zqhToC0GS0Qc-a7V1LsscqEXMlg3DlQpv_RUD86ni6YXlS0eKLT9IUgoJ1XBM2kUBJYmVp4wfHD4etXgvt7ktkTq4r2SdSweL-I/s1000-rw/IMG-20231012-WA0103.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <span class="badge">تثبيت آمن ودقيق بضمان معتمد 10 سنوات</span>
+                <h1>تركيب مظلات السيارات والحدائق بالرياض</h1>
+                <p>تظليل فاخر يحمي ممتلكاتك من لهيب الشمس ويضفي لمسة جمالية راقية على منزلك</p>
+                <div class="hero-actions">
+                    <!-- زر الاتصال المطور فائق البروز والوضوح -->
+                    <a href="tel:0536491079" class="btn-luxury-phone"><i class="fa-solid fa-phone"></i> اتصل الآن: 0536491079</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. تفاصيل الخدمة (مقسمة لعمودين تترتب تلقائياً تحت بعضها في الجوال) -->
+        <section class="section-padding bg-light">
+            <div class="container">
+                <div class="grid grid-2">
                     
-                    <!-- عرض مميزات المظلات بالصور الحقيقية الفخمة من بلوجر المجهزة والمحولة لـ WebP تلقائياً -->
-                    <div class="grid" style="gap: 25px; margin-top: 30px;">
+                    <!-- العمود الأول: تفاصيل العمل والنصوص التسويقية القوية والداعمة للسيو وقوقل ادز -->
+                    <div class="why-us-box">
+                        <h2 style="color: var(--main-color); font-weight: 900; margin-bottom: 20px;">تصاميم عصرية وخامات مقاومة لشمس العاصمة</h2>
+                        <p class="desc-text" style="text-align: right; text-align-last: right;">نقدم خدمات تفصيل وتوريد وتركيب المظلات السكنية والتجارية بمواصفات قياسية فائقة في كافة أحياء مدينة الرياض. نحن ندرك أن طبيعة المناخ شديد الحرارة في منطقة نجد تتطلب حلول تظليل متينة للغاية لحماية السيارات والحدائق والجلسات الخارجية من التلف والبهتان وضمان عمر افتراضي طويل للمظلة.</p>
                         
-                        <!-- نوع 1: مظلات سيارات (مربوط بصورتك الحقيقية لتركيب المظلة) -->
-                        <div style="background: var(--bg-light); padding: 15px; border-radius: 8px; border-right: 4px solid var(--gold-color);">
-                            <h4 style="color: var(--main-color); font-weight: 800; margin-bottom: 10px;">1. مظلات سيارات PVC كوري وألماني أصلي:</h4>
-                            <p class="desc-text" style="text-align: right; text-align-last: right; font-size: 0.9rem; margin-bottom: 15px;">نستخدم أفضل أنواع قماش الـ PVC عالي الكثافة (سماكة 1100 جرام) المقاوم للاشتعال وعوامل التعرية، مما يوفر عزل كامل لدرجات الحرارة ومياه الأمطار بنسبة 100% ويحافظ على دهان سيارتك.</p>
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdt5e_fmyix3-ETygKVGicwZhdh3Cp-Ka6o7Vt6wWq3aKmpzplLgnZsp5F64f7oE66SyX7TZsdoITOX1sfsrpldP0BzfI9wsm_nG3sZGAc10mHyMg8JIgX2VCerLFsOJC2PwvJnGku-Mlv1PrX9tH7oyvk_WzLRXp6nd8LjP6ff3K5opRo2Jlw4R8GHuY/s600-rw/IMG-20231012-WA0048.jpg" alt="مظلات سيارات بالرياض" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: var(--shadow);">
-                        </div>
+                        <!-- عرض مميزات المظلات بالصور الحقيقية الفخمة مع التحميل الكسول وتحديد الأبعاد لمنع CLS واستهلاك البيانات -->
+                        <div class="grid" style="gap: 25px; margin-top: 30px;">
+                            
+                            <!-- نوع 1: مظلات سيارات -->
+                            <div style="background: var(--bg-light); padding: 15px; border-radius: 8px; border-right: 4px solid var(--gold-color);">
+                                <!-- تم تعديل درجة العنوان إلى h3 لضمان الهيكلية المتسلسلة الصحيحة -->
+                                <h3 style="color: var(--main-color); font-weight: 800; margin-bottom: 10px; font-size: 1.15rem;">1. مظلات سيارات PVC كوري وألماني أصلي:</h3>
+                                <p class="desc-text" style="text-align: right; text-align-last: right; font-size: 0.9rem; margin-bottom: 15px;">نستخدم أفضل أنواع قماش الـ PVC عالي الكثافة (سماكة 1100 جرام) المقاوم للاشتعال وعوامل التعرية، مما يوفر عزل كامل لدرجات الحرارة ومياه الأمطار بنسبة 100% ويحافظ على دهان سيارتك.</p>
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdt5e_fmyix3-ETygKVGicwZhdh3Cp-Ka6o7Vt6wWq3aKmpzplLgnZsp5F64f7oE66SyX7TZsdoITOX1sfsrpldP0BzfI9wsm_nG3sZGAc10mHyMg8JIgX2VCerLFsOJC2PwvJnGku-Mlv1PrX9tH7oyvk_WzLRXp6nd8LjP6ff3K5opRo2Jlw4R8GHuY/s600-rw/IMG-20231012-WA0048.jpg" alt="مظلات سيارات بالرياض" width="400" height="200" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: var(--shadow);">
+                            </div>
 
-                        <!-- نوع 2: برغولات وجلسات حدائق (مربوط بصورتك الحقيقية للبرغولة) -->
-                        <div style="background: var(--bg-light); padding: 15px; border-radius: 8px; border-right: 4px solid var(--gold-color);">
-                            <h4 style="color: var(--main-color); font-weight: 800; margin-bottom: 10px;">2. مظلات وجلسات حدائق خشبية وحديدية فخمة:</h4>
-                            <p class="desc-text" style="text-align: right; text-align-last: right; font-size: 0.9rem; margin-bottom: 15px;">برغولات ومظلات من الخشب البلاستيكي المعالج المقاوم للأمطار والتسوس والحديد المشغول الأنيق لتمنح فناء حديقتك طابعاً كلاسيكياً دافئاً وفاخراً لتستمتع بأجمل الجلسات العائلية.</p>
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8_nDt9QkkV-NypUabO_x-9_pg9QVjSmWh6GDWUfQG3m1QZ-HPd0SDBMmNlWUH0NnDklX7arGTxl7JT-7994xpAGmwXmRtboQCSoj-m3X3p7lc9Cazr-SRiQ2jOVvccNfF8tpziTSzmWfTIfeOF_IbkE9zcjFSCK5d-OEK0pdGWx22rfwncX7swRv6S6o/s600-rw/IMG-20231012-WA0054.jpg" alt="مظلات حدائق بالرياض" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: var(--shadow);">
-                        </div>
+                            <!-- نوع 2: برغولات وجلسات حدائق -->
+                            <div style="background: var(--bg-light); padding: 15px; border-radius: 8px; border-right: 4px solid var(--gold-color);">
+                                <!-- تم تعديل درجة العنوان إلى h3 لضمان الهيكلية المتسلسلة الصحيحة -->
+                                <h3 style="color: var(--main-color); font-weight: 800; margin-bottom: 10px; font-size: 1.15rem;">2. مظلات وجلسات حدائق خشبية وحديدية فخمة:</h3>
+                                <p class="desc-text" style="text-align: right; text-align-last: right; font-size: 0.9rem; margin-bottom: 15px;">برغولات ومظلات من الخشب البلاستيكي المعالج المقاوم للأمطار والتسوس والحديد المشغول الأنيق لتمنح فناء حديقتك طابعاً كلاسيكياً دافئاً وفاخراً لتستمتع بأجمل الجلسات العائلية.</p>
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8_nDt9QkkV-NypUabO_x-9_pg9QVjSmWh6GDWUfQG3m1QZ-HPd0SDBMmNlWUH0NnDklX7arGTxl7JT-7994xpAGmwXmRtboQCSoj-m3X3p7lc9Cazr-SRiQ2jOVvccNfF8tpziTSzmWfTIfeOF_IbkE9zcjFSCK5d-OEK0pdGWx22rfwncX7swRv6S6o/s600-rw/IMG-20231012-WA0054.jpg" alt="مظلات حدائق بالرياض" width="400" height="200" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: var(--shadow);">
+                            </div>
 
-                        <!-- نوع 3: لكسان ومسابح (مربوط بصورتك الحقيقية لمظلة الحوش واللكسان) -->
-                        <div style="background: var(--bg-light); padding: 15px; border-radius: 8px; border-right: 4px solid var(--gold-color);">
-                            <h4 style="color: var(--main-color); font-weight: 800; margin-bottom: 10px;">3. مظلات لكسان ومظلات احواش ومسابح:</h4>
-                            <p class="desc-text" style="text-align: right; text-align-last: right; font-size: 0.9rem; margin-bottom: 15px;">ألواح مصنوعة من البولي كربونيت المقاوم للصدمات، تمنح حماية متكاملة من الرياح والأتربة والأمطار مع إمكانية تمرير الضوء بتأثيرات ساحرة وجذابة للمسابح ومداخل الملاحق والفلل.</p>
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHIUM7AXqgRu8Ck1sErufrA9btw4HxkBzON9XqmgClHmJ8Npwx6_yHcHtFAz-tqePwLgceTF_yLNQ8Y9EZddnlmme3WHelen9Mfr27hOrNRHvXsnjLyONUUu72QHtKSUuUCCHS7fCp479nDTnBVivF4LC6J_ZgoiVIEMDfoIjLdeobpqEe2rrP1Z4vrkk/s600-rw/IMG-20231016-WA0031.jpg" alt="مظلات لكسان ومسابح بالرياض" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: var(--shadow);">
-                        </div>
+                            <!-- نوع 3: لكسان ومسابح -->
+                            <div style="background: var(--bg-light); padding: 15px; border-radius: 8px; border-right: 4px solid var(--gold-color);">
+                                <!-- تم تعديل درجة العنوان إلى h3 لضمان الهيكلية المتسلسلة الصحيحة -->
+                                <h3 style="color: var(--main-color); font-weight: 800; margin-bottom: 10px; font-size: 1.15rem;">3. مظلات لكسان ومظلات احواش ومسابح:</h3>
+                                <p class="desc-text" style="text-align: right; text-align-last: right; font-size: 0.9rem; margin-bottom: 15px;">ألواح مصنوعة من البولي كربونيت المقاوم للصدمات، تمنح حماية متكاملة من الرياح والأتربة والأمطار مع إمكانية تمرير الضوء بتأثيرات ساحرة وجذابة للمسابح ومداخل الملاحق والفلل.</p>
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHIUM7AXqgRu8Ck1sErufrA9btw4HxkBzON9XqmgClHmJ8Npwx6_yHcHtFAz-tqePwLgceTF_yLNQ8Y9EZddnlmme3WHelen9Mfr27hOrNRHvXsnjLyONUUu72QHtKSUuUCCHS7fCp479nDTnBVivF4LC6J_ZgoiVIEMDfoIjLdeobpqEe2rrP1Z4vrkk/s600-rw/IMG-20231016-WA0031.jpg" alt="مظلات لكسان ومسابح بالرياض" width="400" height="200" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: var(--shadow);">
+                            </div>
 
-                    </div>
-                </div>
-                
-                <!-- العمود الثاني: صندوق التحويل وحجز الطلبات السريع (مثالي لإعلانات الجوال) -->
-                <div style="display: flex; flex-direction: column; gap: 20px;">
-                    <div class="why-us-box" style="border: 2px solid var(--gold-color); background-color: var(--white); text-align: center;">
-                        <h3 style="color: var(--main-color); font-weight: 900; margin-bottom: 10px; font-size: 1.3rem;">اطلب تسعيرة ميدانية مجانية</h3>
-                        <p class="desc-text" style="font-size: 0.9rem; margin-bottom: 20px;">تواصل مباشرة مع المهندس الفني لترتيب زيارة ميدانية للموقع وأخذ المقاسات الدقيقة بدون أي رسوم أو التزامات.</p>
-                        
-                        <div style="display: flex; flex-direction: column; gap: 12px;">
-                            <a href="tel:0536491079" class="btn btn-gold btn-lg" style="width: 100%; font-size: 1rem;"><i class="fa-solid fa-phone"></i> اتصل بـ 0536491079</a>
-                            <a href="https://wa.me/966536491079" target="_blank" class="btn btn-whatsapp btn-lg" style="width: 100%; font-size: 1rem;"><i class="fa-brands fa-whatsapp"></i> تواصل عبر الواتساب</a>
-                        </div>
-
-                        <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid var(--border-color); text-align: right;">
-                            <h5 style="color: var(--main-color); font-weight: 800; margin-bottom: 10px; font-size: 0.95rem;"><i class="fa-solid fa-circle-check" style="color: var(--gold-color);"></i> ما نقدمه لك:</h5>
-                            <ul class="features-list" style="margin-top: 10px; gap: 8px;">
-                                <li style="font-size: 0.85rem; padding: 8px;">حديد سماكة عالية مع دهان ناري مقاوم للصدأ</li>
-                                <li style="font-size: 0.85rem; padding: 8px;">ضمان رسمي مصدق ومعتمد لمدة 10 سنوات</li>
-                                <li style="font-size: 0.85rem; padding: 8px;">سرعة تامة في التنفيذ والتركيب خلال يومين</li>
-                            </ul>
                         </div>
                     </div>
-                </div>
+                    
+                    <!-- العمود الثاني: صندوق التحويل وحجز الطلبات السريع -->
+                    <div style="display: flex; flex-direction: column; gap: 20px;">
+                        <div class="why-us-box" style="border: 2px solid var(--gold-color); background-color: var(--white); text-align: center;">
+                            <h3 style="color: var(--main-color); font-weight: 900; margin-bottom: 10px; font-size: 1.3rem;">اطلب تسعيرة ميدانية مجانية</h3>
+                            <p class="desc-text" style="font-size: 0.9rem; margin-bottom: 20px;">تواصل مباشرة مع المهندس الفني لترتيب زيارة ميدانية للموقع وأخذ المقاسات الدقيقة بدون أي رسوم أو التزامات.</p>
+                            
+                            <div style="display: flex; flex-direction: column; gap: 12px;">
+                                <a href="tel:0536491079" class="btn btn-gold btn-lg" style="width: 100%; font-size: 1rem;"><i class="fa-solid fa-phone"></i> اتصل بـ 0536491079</a>
+                                <a href="https://wa.me/966536491079" target="_blank" class="btn btn-whatsapp btn-lg" style="width: 100%; font-size: 1rem;"><i class="fa-brands fa-whatsapp"></i> تواصل عبر الواتساب</a>
+                            </div>
 
+                            <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid var(--border-color); text-align: right;">
+                                <!-- تم تعديل درجة العنوان إلى h4 بدلاً من h5 لمنع القفز البرمجي وتصحيح بنية SEO والوصول -->
+                                <h4 style="color: var(--main-color); font-weight: 800; margin-bottom: 10px; font-size: 0.95rem;"><i class="fa-solid fa-circle-check" style="color: var(--gold-color);"></i> ما نقدمه لك:</h4>
+                                <ul class="features-list" style="margin-top: 10px; gap: 8px;">
+                                    <li style="font-size: 0.85rem; padding: 8px;">حديد سماكة عالية مع دهان ناري مقاوم للصدأ</li>
+                                    <li style="font-size: 0.85rem; padding: 8px;">ضمان رسمي مصدق ومعتمد لمدة 10 سنوات</li>
+                                    <li style="font-size: 0.85rem; padding: 8px;">سرعة تامة في التنفيذ والتركيب خلال يومين</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </main> <!-- [إغلاق وسم التعديل]: نهاية وسم main -->
 
     <!-- 5. التذييل والفوتر الفاخر الموحد المتوافق تماماً مع الجوال -->
     <footer class="footer-main">
@@ -231,7 +246,7 @@
         </div>
     </footer>
 
-    <!-- 6. الأزرار الثابتة بيمين أسفل الشاشة للاتصال والواتساب السريع (مهمة جداً لعملائنا في قوقل ادز) -->
+    <!-- 6. الأزرار الثابتة بيمين أسفل الشاشة للاتصال والواتساب السريع (مهمة جداً لعملاء إعلانات الجوال) -->
     <div class="fixed-widgets">
         <a href="https://wa.me/966536491079" target="_blank" class="widget-btn widget-wa pulse" aria-label="راسلنا على واتساب"><i class="fa-brands fa-whatsapp"></i></a>
         <a href="tel:0536491079" class="widget-btn widget-phone pulse" aria-label="اتصل بنا الآن"><i class="fa-solid fa-phone"></i></a>
