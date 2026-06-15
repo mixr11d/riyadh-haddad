@@ -7,11 +7,17 @@
     <meta name="description" content="نقوم بتركيب سواتر الفلل وأسوار المنازل بالرياض لتوفير الخصوصية والأمان. سواتر حديد شرايح ومجدول، سواتر خشبية بلاستيكية معالجة WPC وسواتر قماش بأسعار ممتازة.">
     <meta name="keywords" content="سواتر الرياض, تركيب سواتر أسوار, سواتر حديد شرايح, سواتر خشب بلاستيكي, سواتر فلل الرياض, سواتر جدارية">
     
+    <!-- تحسين LCP: تحميل مسبق لصورة الخلفية للبانر الرئيسي لزيادة سرعة الفتح -->
+    <link rel="preload" as="image" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhr7gLVVnhzduG0uxTRzEl8ncjJcrIDpJV556jClZLibPXpIXPPN5rhTCuizoyzuEEap7htiSPoQbTle4a_fdRcJfay4dL0olqhB-jLdMIR_uuI-opyFilt6531-uJA4sP-pKZsHHsN625Imemet5bO0jZRcHO0x-5DlEkEd5CjgYBKvOZLBbdluynoku0/s1000-rw/IMG-20231117-WA0016.jpg">
+
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- تحميل غير مانع لعرض الأيقونات لتسريع ظهور الصفحة (Non-blocking FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     
     <!-- استدعاء ملف التنسيق الموحد الفاخر -->
     <link rel="stylesheet" href="style.css">
@@ -109,82 +115,91 @@
         </div>
     </header>
 
-    <!-- 3. بانر الصفحة الداخلي الفخم والملائم للجوال (مربوط بصورتك الحقيقية الأولى ومعتم قسرياً لبروز دائم للكلام) -->
-    <section class="hero" style="background-image: linear-gradient(rgba(7, 10, 19, 0.94), rgba(7, 10, 19, 0.96)), url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhr7gLVVnhzduG0uxTRzEl8ncjJcrIDpJV556jClZLibPXpIXPPN5rhTCuizoyzuEEap7htiSPoQbTle4a_fdRcJfay4dL0olqhB-jLdMIR_uuI-opyFilt6531-uJA4sP-pKZsHHsN625Imemet5bO0jZRcHO0x-5DlEkEd5CjgYBKvOZLBbdluynoku0/s1000-rw/IMG-20231117-WA0016.jpg');">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <span class="badge">حلول تسييج وحماية ممتازة توفر الخصوصية الكاملة</span>
-            <h1>تركيب سواتر جدارية لأسوار الفلل بالرياض</h1>
-            <p>سواتر حديدية وخشبية فخمة تحمي عائلتك وتحجب الرؤية تماماً بمظهر ديكوري أنيق</p>
-            <div class="hero-actions">
-                <!-- زر الاتصال بلون جديد فاخر ومقاوم تماماً للبهتان والتشويش البصري -->
-                <a href="tel:0536491079" class="btn-luxury-phone"><i class="fa-solid fa-phone"></i> اتصل الآن: 0536491079</a>
-            </div>
-        </div>
-    </section>
+    <!-- [تعديل إمكانية الوصول]: تم إضافة وسم main لحل مشكلة معلم المستند وتسهيل قراءته من محركات البحث -->
+    <main id="main-content">
 
-    <!-- 4. تفاصيل الخدمة (مقسمة لعمودين تترتب تلقائياً تحت بعضها في الجوال) -->
-    <section class="section-padding bg-light">
-        <div class="container">
-            <div class="grid grid-2">
-                
-                <!-- العمود الأول: تفاصيل العمل والنصوص التسويقية القوية والداعمة للسيو وقوقل ادز -->
-                <div class="why-us-box">
-                    <h2 style="color: var(--main-color); font-weight: 900; margin-bottom: 20px;">عزز خصوصية وأمان منزلك مع أفضل السواتر بالرياض</h2>
-                    <p class="desc-text" style="text-align: right; text-align-last: right;">يعتبر تركيب السواتر على أسوار المنازل والفلل بالرياض خطوة ضرورية لحجب الرؤية كلياً وحماية الخصوصية الشخصية للعائلات، بالإضافة لتوفير الأمان وحماية المبنى من الرياح العاصفة والأتربة وتوفير مظهر ديكوري خارجي فاخر يتلاءم مع المظهر العام للفيلا.</p>
+        <!-- 3. بانر الصفحة الداخلي الفخم والملائم للجوال -->
+        <section class="hero" style="background-image: linear-gradient(rgba(7, 10, 19, 0.94), rgba(7, 10, 19, 0.96)), url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhr7gLVVnhzduG0uxTRzEl8ncjJcrIDpJV556jClZLibPXpIXPPN5rhTCuizoyzuEEap7htiSPoQbTle4a_fdRcJfay4dL0olqhB-jLdMIR_uuI-opyFilt6531-uJA4sP-pKZsHHsN625Imemet5bO0jZRcHO0x-5DlEkEd5CjgYBKvOZLBbdluynoku0/s1000-rw/IMG-20231117-WA0016.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <span class="badge">حلول تسييج وحماية ممتازة توفر الخصوصية الكاملة</span>
+                <h1>تركيب سواتر جدارية لأسوار الفلل بالرياض</h1>
+                <p>سواتر حديدية وخشبية فخمة تحمي عائلتك وتحجب الرؤية تماماً بمظهر ديكوري أنيق</p>
+                <div class="hero-actions">
+                    <!-- زر الاتصال بلون جديد فاخر ومقاوم تماماً للبهتان والتشويش البصري -->
+                    <a href="tel:0536491079" class="btn-luxury-phone"><i class="fa-solid fa-phone"></i> اتصل الآن: 0536491079</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. تفاصيل الخدمة -->
+        <section class="section-padding bg-light">
+            <div class="container">
+                <div class="grid grid-2">
                     
-                    <!-- عرض مميزات السواتر بالصور الحقيقية الفخمة من بلوجر المجهزة والمحولة لـ WebP تلقائياً -->
-                    <div class="grid" style="gap: 25px; margin-top: 30px;">
+                    <!-- العمود الأول: تفاصيل العمل والنصوص التسويقية الداعمة للسيو وقوقل ادز -->
+                    <div class="why-us-box">
+                        <h2 style="color: var(--main-color); font-weight: 900; margin-bottom: 20px;">عزز خصوصية وأمان منزلك مع أفضل السواتر بالرياض</h2>
+                        <p class="desc-text" style="text-align: right; text-align-last: right;">يعتبر تركيب السواتر على أسوار المنازل والفلل بالرياض خطوة ضرورية لحجب الرؤية كلياً وحماية الخصوصية الشخصية للعائلات، بالإضافة لتوفير الأمان وحماية المبنى من الرياح العاصفة والأتربة وتوفير مظهر ديكوري خارجي فاخر يتلاءم مع المظهر العام للفيلا.</p>
                         
-                        <!-- نوع 1: سواتر حديد شرايح (مربوط بصورتك الحقيقية للساتر الحديدي) -->
-                        <div style="background: var(--bg-light); padding: 15px; border-radius: 8px; border-right: 4px solid var(--gold-color);">
-                            <h4 style="color: var(--main-color); font-weight: 800; margin-bottom: 10px;">1. سواتر حديد شرايح ومجدول (الأكثر طلباً):</h4>
-                            <p class="desc-text" style="text-align: right; text-align-last: right; font-size: 0.9rem; margin-bottom: 15px;">نستخدم حديد بسماكات عالية وتغطية كاملة لحجب الرؤية بنسبة 100% مع دهانات حرارية نارية عازلة للرطوبة وتمنع الصدأ تماماً، وتتميز بثبات هائل وقدرة على صد الرياح العاصفة.</p>
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNCxgUr-jhAE1K32rCH4iIXVELE_gTP1Oe4UeBt7NDp54MwHusADtxY7cUMqDfP4whAV5_kJ9HDWAT6tBctR9Vaue1jsF2ezyzLvxZz3ak3LFyKe385DERGLoDWmHehtvX-gUzLUsJKVxpzp-xoUGeeCkONbPyqtvnz5WkT1Q7oHOYssP0lSaQ0EXtv84/s600-rw/IMG-20231117-WA0010.jpg" alt="سواتر حديد بالرياض" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: var(--shadow);">
-                        </div>
+                        <!-- عرض مميزات السواتر بالصور الحقيقية الفخمة -->
+                        <div class="grid" style="gap: 25px; margin-top: 30px;">
+                            
+                            <!-- نوع 1: سواتر حديد شرايح مع تحديد قيم الأبعاد والتحميل الذكي لمنع CLS واستهلاك البيانات -->
+                            <div style="background: var(--bg-light); padding: 15px; border-radius: 8px; border-right: 4px solid var(--gold-color);">
+                                <!-- تم تعديل درجة العنوان إلى h3 لضمان الهيكلية المتسلسلة الصحيحة -->
+                                <h3 style="color: var(--main-color); font-weight: 800; margin-bottom: 10px; font-size: 1.15rem;">1. سواتر حديد شرايح ومجدول (الأكثر طلباً):</h3>
+                                <p class="desc-text" style="text-align: right; text-align-last: right; font-size: 0.9rem; margin-bottom: 15px;">نستخدم حديد بسماكات عالية وتغطية كاملة لحجب الرؤية بنسبة 100% مع دهانات حرارية نارية عازلة للرطوبة وتمنع الصدأ تماماً، وتتميز بثبات هائل وقدرة على صد الرياح العاصفة.</p>
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNCxgUr-jhAE1K32rCH4iIXVELE_gTP1Oe4UeBt7NDp54MwHusADtxY7cUMqDfP4whAV5_kJ9HDWAT6tBctR9Vaue1jsF2ezyzLvxZz3ak3LFyKe385DERGLoDWmHehtvX-gUzLUsJKVxpzp-xoUGeeCkONbPyqtvnz5WkT1Q7oHOYssP0lSaQ0EXtv84/s600-rw/IMG-20231117-WA0010.jpg" alt="سواتر حديد بالرياض" width="400" height="200" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: var(--shadow);">
+                            </div>
 
-                        <!-- نوع 2: سواتر خشب بلاستيكي معالج (مربوط بصورتك الحقيقية للساتر البلاستيكي الخشبي) -->
-                        <div style="background: var(--bg-light); padding: 15px; border-radius: 8px; border-right: 4px solid var(--gold-color);">
-                            <h4 style="color: var(--main-color); font-weight: 800; margin-bottom: 10px;">2. سواتر خشبية بلاستيكية معالجة (WPC):</h4>
-                            <p class="desc-text" style="text-align: right; text-align-last: right; font-size: 0.9rem; margin-bottom: 15px;">تجمع بين جمال وأناقة مظهر الخشب الطبيعي وصلابة ومقاومة البلاستيك المعالج ضد التآكل والحرارة، تتوفر بأشكال رص متراصة أو مجدولة بألوان ثابتة تدوم طويلاً.</p>
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5zgVsEm5HTXrzlcBDEgoFpjXQ2APjnT_3FzmdnrTlJ86DP8Vu8zHBI4ei2NLJpyHjxWbq0NFDt5GdjYI6oiwLcqNh2WN6ZUbIqZzon4HPpyb0PxT2OO0zQpTYD8ina-eSIn0LLBuOLbqQUA5RaB-80TuTyNo5on-_wH2x3U_lbziEWVVgiOpohgXts-E/s600-rw/IMG-20231117-WA0019.jpg" alt="سواتر خشب بلاستيكي بالرياض" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: var(--shadow);">
-                        </div>
+                            <!-- نوع 2: سواتر خشب بلاستيكي مع تحديد قيم الأبعاد والتحميل الذكي لمنع CLS واستهلاك البيانات -->
+                            <div style="background: var(--bg-light); padding: 15px; border-radius: 8px; border-right: 4px solid var(--gold-color);">
+                                <!-- تم تعديل درجة العنوان إلى h3 لضمان الهيكلية المتسلسلة الصحيحة -->
+                                <h3 style="color: var(--main-color); font-weight: 800; margin-bottom: 10px; font-size: 1.15rem;">2. سواتر خشبية بلاستيكية معالجة (WPC):</h3>
+                                <p class="desc-text" style="text-align: right; text-align-last: right; font-size: 0.9rem; margin-bottom: 15px;">تجمع بين جمال وأناقة مظهر الخشب الطبيعي وصلابة ومقاومة البلاستيك المعالج ضد التآكل والحرارة، تتوفر بأشكال رص متراصة أو مجدولة بألوان ثابتة تدوم طويلاً.</p>
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5zgVsEm5HTXrzlcBDEgoFpjXQ2APjnT_3FzmdnrTlJ86DP8Vu8zHBI4ei2NLJpyHjxWbq0NFDt5GdjYI6oiwLcqNh2WN6ZUbIqZzon4HPpyb0PxT2OO0zQpTYD8ina-eSIn0LLBuOLbqQUA5RaB-80TuTyNo5on-_wH2x3U_lbziEWVVgiOpohgXts-E/s600-rw/IMG-20231117-WA0019.jpg" alt="سواتر خشب بلاستيكي بالرياض" width="400" height="200" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: var(--shadow);">
+                            </div>
 
-                        <!-- نوع 3: سواتر قماشية (مربوط بصورتك الحقيقية للساتر القماشي) -->
-                        <div style="background: var(--bg-light); padding: 15px; border-radius: 8px; border-right: 4px solid var(--gold-color);">
-                            <h4 style="color: var(--main-color); font-weight: 800; margin-bottom: 10px;">3. سواتر قماش بولي إيثيلين وPVC اقتصادي:</h4>
-                            <p class="desc-text" style="text-align: right; text-align-last: right; font-size: 0.9rem; margin-bottom: 15px;">نوفر تغطية وتسييج قماشي فاخر بأسعار اقتصادية متميزة، نستخدم أقمشة كورية وأسترالية شديدة التحمل ومقاومة لحرارة الشمس وسريعة جداً في التركيب والتثبيت.</p>
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg10DNbeRVqp7RqauZ0-ywKBjhE80lfmYKimd3h6klYd96iuVNrFJZpV5r_UR9NlzKAfQWYHIPlNql7O52VTUy1UQAe6m8ZIUHZFyVwnBnssPj5G34sRc2O7IZQRq65dTYn9KlvUHsNuGbtQC00lpw4UAfpN3FhWit-l5h0vkOVyrm3y21VTN8LewXu3f4/s600-rw/IMG-20231117-WA0018.jpg" alt="سواتر قماش بالرياض" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: var(--shadow);">
-                        </div>
+                            <!-- نوع 3: سواتر قماشية مع تحديد قيم الأبعاد والتحميل الذكي لمنع CLS واستهلاك البيانات -->
+                            <div style="background: var(--bg-light); padding: 15px; border-radius: 8px; border-right: 4px solid var(--gold-color);">
+                                <!-- تم تعديل درجة العنوان إلى h3 لضمان الهيكلية المتسلسلة الصحيحة -->
+                                <h3 style="color: var(--main-color); font-weight: 800; margin-bottom: 10px; font-size: 1.15rem;">3. سواتر قماش بولي إيثيلين وPVC اقتصادي:</h3>
+                                <p class="desc-text" style="text-align: right; text-align-last: right; font-size: 0.9rem; margin-bottom: 15px;">نوفر تغطية وتسييج قماشي فاخر بأسعار اقتصادية متميزة، نستخدم أقمشة كورية وأسترالية شديدة التحمل ومقاومة لحرارة الشمس وسريعة جداً في التركيب والتثبيت.</p>
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg10DNbeRVqp7RqauZ0-ywKBjhE80lfmYKimd3h6klYd96iuVNrFJZpV5r_UR9NlzKAfQWYHIPlNql7O52VTUy1UQAe6m8ZIUHZFyVwnBnssPj5G34sRc2O7IZQRq65dTYn9KlvUHsNuGbtQC00lpw4UAfpN3FhWit-l5h0vkOVyrm3y21VTN8LewXu3f4/s600-rw/IMG-20231117-WA0018.jpg" alt="سواتر قماش بالرياض" width="400" height="200" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: var(--shadow);">
+                            </div>
 
-                    </div>
-                </div>
-                
-                <!-- العمود الثاني: صندوق التحويل وحجز الطلبات السريع (مثالي لإعلانات الجوال) -->
-                <div style="display: flex; flex-direction: column; gap: 20px;">
-                    <div class="why-us-box" style="border: 2px solid var(--gold-color); background-color: var(--white); text-align: center;">
-                        <h3 style="color: var(--main-color); font-weight: 900; margin-bottom: 10px; font-size: 1.3rem;">احصل على معاينة وقياس مجاني</h3>
-                        <p class="desc-text" style="font-size: 0.9rem; margin-bottom: 20px;">تواصل مباشرة مع المهندس الفني لترتيب زيارة ميدانية لرفع المقاسات ومعاينة أسوار موقعك بالرياض مجاناً وبأسرع وقت.</p>
-                        
-                        <div style="display: flex; flex-direction: column; gap: 12px;">
-                            <a href="tel:0536491079" class="btn btn-gold btn-lg" style="width: 100%; font-size: 1rem;"><i class="fa-solid fa-phone"></i> اتصل بـ 0536491079</a>
-                            <a href="https://wa.me/966536491079" target="_blank" class="btn btn-whatsapp btn-lg" style="width: 100%; font-size: 1rem;"><i class="fa-brands fa-whatsapp"></i> تواصل عبر الواتساب</a>
-                        </div>
-
-                        <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid var(--border-color); text-align: right;">
-                            <h5 style="color: var(--main-color); font-weight: 800; margin-bottom: 10px; font-size: 0.95rem;"><i class="fa-solid fa-circle-check" style="color: var(--gold-color);"></i> ما نضمنه لك:</h5>
-                            <ul class="features-list" style="margin-top: 10px; gap: 8px;">
-                                <li style="font-size: 0.85rem; padding: 8px;">بناء هيكلي آمن ومقاوم للرياح العاصفة تماماً</li>
-                                <li style="font-size: 0.85rem; padding: 8px;">خامات معالجة حرارياً لا تتأثر بالصدأ أو الرطوبة</li>
-                                <li style="font-size: 0.85rem; padding: 8px;">تغطية وحجب للرؤية لتأمين الخصوصية بنسبة 100%</li>
-                            </ul>
                         </div>
                     </div>
-                </div>
+                    
+                    <!-- العمود الثاني: صندوق التحويل وحجز الطلبات السريع -->
+                    <div style="display: flex; flex-direction: column; gap: 20px;">
+                        <div class="why-us-box" style="border: 2px solid var(--gold-color); background-color: var(--white); text-align: center;">
+                            <h3 style="color: var(--main-color); font-weight: 900; margin-bottom: 10px; font-size: 1.3rem;">احصل على معاينة وقياس مجاني</h3>
+                            <p class="desc-text" style="font-size: 0.9rem; margin-bottom: 20px;">تواصل مباشرة مع المهندس الفني لترتيب زيارة ميدانية لرفع المقاسات ومعاينة أسوار موقعك بالرياض مجاناً وبأسرع وقت.</p>
+                            
+                            <div style="display: flex; flex-direction: column; gap: 12px;">
+                                <a href="tel:0536491079" class="btn btn-gold btn-lg" style="width: 100%; font-size: 1rem;"><i class="fa-solid fa-phone"></i> اتصل بـ 0536491079</a>
+                                <a href="https://wa.me/966536491079" target="_blank" class="btn btn-whatsapp btn-lg" style="width: 100%; font-size: 1rem;"><i class="fa-brands fa-whatsapp"></i> تواصل عبر الواتساب</a>
+                            </div>
 
+                            <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid var(--border-color); text-align: right;">
+                                <!-- تم التعديل إلى h4 بدلاً من h5 لمنع القفز البرمجي للعناوين -->
+                                <h4 style="color: var(--main-color); font-weight: 800; margin-bottom: 10px; font-size: 0.95rem;"><i class="fa-solid fa-circle-check" style="color: var(--gold-color);"></i> ما نضمنه لك:</h4>
+                                <ul class="features-list" style="margin-top: 10px; gap: 8px;">
+                                    <li style="font-size: 0.85rem; padding: 8px;">بناء هيكلي آمن ومقاوم للرياح العاصفة تماماً</li>
+                                    <li style="font-size: 0.85rem; padding: 8px;">خامات معالجة حرارياً لا تتأثر بالصدأ أو الرطوبة</li>
+                                    <li style="font-size: 0.85rem; padding: 8px;">تغطية وحجب للرؤية لتأمين الخصوصية بنسبة 100%</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </main> <!-- [إغلاق وسم التعديل]: نهاية وسم main -->
 
     <!-- 5. التذييل والفوتر الفاخر الموحد المتوافق تماماً مع الجوال -->
     <footer class="footer-main">
