@@ -7,11 +7,17 @@
     <meta name="description" content="تعرف على مؤسسة حدادة الرياض. رائدون في تصميم وتركيب مظلات السيارات، السواتر، الساندوتش بانل، والهياكل المعدنية بضمان حقيقي وخبرة فنية ممتدة.">
     <meta name="keywords" content="من نحن حدادة الرياض, مقاول حدادة بالرياض, مؤسسة مظلات وسواتر الرياض, ساندوتش بانل الرياض">
     
+    <!-- تحسين LCP: تحميل مسبق لصورة الخلفية للبانر الرئيسي لزيادة سرعة الفتح -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80">
+
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- تحميل غير مانع لعرض الأيقونات لتسريع ظهور الصفحة (Non-blocking FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     
     <!-- استدعاء ملف التنسيق الموحد الفاخر -->
     <link rel="stylesheet" href="style.css">
@@ -109,60 +115,66 @@
         </div>
     </header>
 
-    <!-- 3. بانر الصفحة الداخلي الفخم والملائم للجوال (معتم قسرياً 100% لمقروئية فائقة وتطابق مع الرئيسية) -->
-    <section class="hero" style="background-image: linear-gradient(rgba(7, 10, 19, 0.94), rgba(7, 10, 19, 0.96)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80');">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <span class="badge">الريادة الفنية والأمان الهندسي بالرياض</span>
-            <h1>مؤسسة حدادة الرياض الفاخرة</h1>
-            <p>خبرة عريقة في تصميم وتشييد المظلات الفاخرة والسواتر والهياكل المعدنية بأعلى جودة</p>
-            <div class="hero-actions">
-                <!-- زر الاتصال بلون جديد فاخر ومقاوم تماماً للبهتان والتشويش البصري -->
-                <a href="tel:0536491079" class="btn-luxury-phone"><i class="fa-solid fa-phone"></i> اتصل بنا الآن: 0536491079</a>
-            </div>
-        </div>
-    </section>
+    <!-- [تعديل إمكانية الوصول]: تم إضافة وسم main لحل مشكلة معلم المستند وتسهيل قراءته من محركات البحث وقارئات الشاشة -->
+    <main id="main-content">
 
-    <!-- 4. تفاصيل من نحن (مقسمة لعمودين تترتب تلقائياً تحت بعضها في الجوال) -->
-    <section class="section-padding bg-light">
-        <div class="container">
-            <div class="grid grid-2">
-                
-                <!-- العمود الأول: نصوص قوية لإقناع العميل بالمؤسسة -->
-                <div class="why-us-box">
-                    <h2 style="color: var(--main-color); font-weight: 900; margin-bottom: 20px;">ريادة وخبرة طويلة في أعمال الحدادة بالرياض</h2>
-                    <p class="desc-text" style="text-align: right; text-align-last: right;">بدأت مسيرة مؤسستنا في الرياض ككيان متخصص في أعمال المقاولات الإنشائية المعدنية والحدادة الفنية. حرصنا منذ اليوم الأول على تقديم خدمات استثنائية وبمعايير هندسية متطورة تلائم تطلعات عملاء المشاريع السكنية والتجارية في منطقة الرياض وضواحيها.</p>
-                    <p class="desc-text" style="text-align: right; text-align-last: right; margin-bottom: 25px;">نعمل بجد واحترافية عالية لتقديم خدمات تفصيل وتركيب مظلات السيارات والحدائق، السواتر الجدارية لحفظ الخصوصية، وملاحق الساندوتش بانل المعزولة، مستعينين بأفضل طواقم العمل من فنيين وحدادين ذوي كفاءة فنية عالية وخبرة واسعة بمتطلبات السوق المحلي.</p>
-                    
-                    <h3 style="color: var(--main-color); font-weight: 800; margin-bottom: 15px;">لماذا يثق بنا عملائنا بالرياض؟</h3>
-                    <ul class="features-list" style="gap: 10px;">
-                        <li style="padding: 10px; font-size: 0.9rem;"><strong>خامات ممتازة ومعتمدة:</strong> نستخدم حديد سابك الأصلي بسماكات متميزة، وتغطيات قماشية PVC كورية وألمانية مقاومة للحرارة والاشتعال.</li>
-                        <li style="padding: 10px; font-size: 0.9rem;"><strong>فريق إشراف متخصص:</strong> يتم الإشراف على جميع أعمال التفصيل والتثبيت لضمان أعلى درجات الأمان ومقاومة الرياح.</li>
-                        <li style="padding: 10px; font-size: 0.9rem;"><strong>الالتزام التام بالمواعيد:</strong> نحافظ على وقت عملائنا ونسلم المشاريع في الأوقات المتفق عليها دون أي تأخير.</li>
-                        <li style="padding: 10px; font-size: 0.9rem;"><strong>زيارات ميدانية مجانية:</strong> نلبي طلباتكم في كافة أحياء الرياض ونوفر زيارات رفع مقاسات مجانية بالكامل.</li>
-                    </ul>
+        <!-- 3. بانر الصفحة الداخلي الفخم والملائم للجوال -->
+        <section class="hero" style="background-image: linear-gradient(rgba(7, 10, 19, 0.94), rgba(7, 10, 19, 0.96)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80');">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <span class="badge">الريادة الفنية والأمان الهندسي بالرياض</span>
+                <h1>مؤسسة حدادة الرياض الفاخرة</h1>
+                <p>خبرة عريقة في تصميم وتشييد المظلات الفاخرة والسواتر والهياكل المعدنية بأعلى جودة</p>
+                <div class="hero-actions">
+                    <!-- زر الاتصال بلون جديد فاخر ومقاوم تماماً للبهتان والتشويش البصري -->
+                    <a href="tel:0536491079" class="btn-luxury-phone"><i class="fa-solid fa-phone"></i> اتصل بنا الآن: 0536491079</a>
                 </div>
-                
-                <!-- العمود الثاني: الصورة الإبداعية والتحويل السريع -->
-                <div style="display: flex; flex-direction: column; gap: 20px;">
-                    <div class="about-img" style="text-align: center;">
-                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80" alt="حدادة ومقاولات الرياض" style="width: 100%; height: auto; border-radius: 12px; box-shadow: var(--shadow); border: 2px solid var(--gold-color);">
+            </div>
+        </section>
+
+        <!-- 4. تفاصيل من نحن (مقسمة لعمودين تترتب تلقائياً تحت بعضها في الجوال) -->
+        <section class="section-padding bg-light">
+            <div class="container">
+                <div class="grid grid-2">
+                    
+                    <!-- العمود الأول: نصوص قوية لإقناع العميل بالمؤسسة -->
+                    <div class="why-us-box">
+                        <h2 style="color: var(--main-color); font-weight: 900; margin-bottom: 20px;">ريادة وخبرة طويلة في أعمال الحدادة بالرياض</h2>
+                        <p class="desc-text" style="text-align: right; text-align-last: right;">بدأت مسيرة مؤسستنا في الرياض ككيان متخصص في أعمال المقاولات الإنشائية المعدنية والحدادة الفنية. حرصنا منذ اليوم الأول على تقديم خدمات استثنائية وبمعايير هندسية متطورة تلائم تطلعات عملاء المشاريع السكنية والتجارية في منطقة الرياض وضواحيها.</p>
+                        <p class="desc-text" style="text-align: right; text-align-last: right; margin-bottom: 25px;">نعمل بجد واحترافية عالية لتقديم خدمات تفصيل وتركيب مظلات السيارات والحدائق، السواتر الجدارية لحفظ الخصوصية، وملاحق الساندوتش بانل المعزولة، مستعينين بأفضل طواقم العمل من فنيين وحدادين ذوي كفاءة فنية عالية وخبرة واسعة بمتطلبات السوق المحلي.</p>
+                        
+                        <h3 style="color: var(--main-color); font-weight: 800; margin-bottom: 15px;">لماذا يثق بنا عملائنا بالرياض؟</h3>
+                        <ul class="features-list" style="gap: 10px;">
+                            <li style="padding: 10px; font-size: 0.9rem;"><strong>خامات ممتازة ومعتمدة:</strong> نستخدم حديد سابك الأصلي بسماكات متميزة، وتغطيات قماشية PVC كورية وألمانية مقاومة للحرارة والاشتعال.</li>
+                            <li style="padding: 10px; font-size: 0.9rem;"><strong>فريق إشراف متخصص:</strong> يتم الإشراف على جميع أعمال التفصيل والتثبيت لضمان أعلى درجات الأمان ومقاومة الرياح.</li>
+                            <li style="padding: 10px; font-size: 0.9rem;"><strong>الالتزام التام بالمواعيد:</strong> نحافظ على وقت عملائنا ونسلم المشاريع في الأوقات المتفق عليها دون أي تأخير.</li>
+                            <li style="padding: 10px; font-size: 0.9rem;"><strong>زيارات ميدانية مجانية:</strong> نلبي طلباتكم في كافة أحياء الرياض ونوفر زيارات رفع مقاسات مجانية بالكامل.</li>
+                        </ul>
                     </div>
                     
-                    <div class="why-us-box" style="border: 2px solid var(--gold-color); background-color: var(--white); text-align: center;">
-                        <h3 style="color: var(--main-color); font-weight: 900; margin-bottom: 10px; font-size: 1.25rem;">احجز موعد الزيارة الآن</h3>
-                        <p class="desc-text" style="font-size: 0.85rem; margin-bottom: 20px;">اتصل بنا اليوم أو تواصل معنا عبر الواتساب وسنقوم بإرسال مندوبنا الفني لمعاينة الموقع وتجهيز التصاميم المناسبة مجاناً.</p>
+                    <!-- العمود الثاني: الصورة الإبداعية والتحويل السريع -->
+                    <div style="display: flex; flex-direction: column; gap: 20px;">
+                        <div class="about-img" style="text-align: center;">
+                            <!-- تم إضافة أبعاد عرض وطول افتراضية للصورة وتفعيل التحميل الذكي لمنع CLS وتوفير استهلاك البيانات للزوار -->
+                            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80" alt="حدادة ومقاولات الرياض" width="600" height="400" loading="lazy" style="width: 100%; height: auto; border-radius: 12px; box-shadow: var(--shadow); border: 2px solid var(--gold-color);">
+                        </div>
                         
-                        <div style="display: flex; flex-direction: column; gap: 12px;">
-                            <a href="tel:0536491079" class="btn btn-gold btn-lg" style="width: 100%; font-size: 1rem;"><i class="fa-solid fa-phone"></i> اتصل بـ 0536491079</a>
-                            <a href="https://wa.me/966536491079" target="_blank" class="btn btn-whatsapp btn-lg" style="width: 100%; font-size: 1rem;"><i class="fa-brands fa-whatsapp"></i> تواصل عبر الواتساب</a>
+                        <div class="why-us-box" style="border: 2px solid var(--gold-color); background-color: var(--white); text-align: center;">
+                            <h3 style="color: var(--main-color); font-weight: 900; margin-bottom: 10px; font-size: 1.25rem;">احجز موعد الزيارة الآن</h3>
+                            <p class="desc-text" style="font-size: 0.85rem; margin-bottom: 20px;">اتصل بنا اليوم أو تواصل معنا عبر الواتساب وسنقوم بإرسال مندوبنا الفني لمعاينة الموقع وتجهيز التصاميم المناسبة مجاناً.</p>
+                            
+                            <div style="display: flex; flex-direction: column; gap: 12px;">
+                                <a href="tel:0536491079" class="btn btn-gold btn-lg" style="width: 100%; font-size: 1rem;"><i class="fa-solid fa-phone"></i> اتصل بـ 0536491079</a>
+                                <a href="https://wa.me/966536491079" target="_blank" class="btn btn-whatsapp btn-lg" style="width: 100%; font-size: 1rem;"><i class="fa-brands fa-whatsapp"></i> تواصل عبر الواتساب</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </main> <!-- [إغلاق وسم التعديل]: نهاية وسم main -->
 
     <!-- 5. التذييل والفوتر الفاخر الموحد المتوافق تماماً مع الجوال -->
     <footer class="footer-main">
