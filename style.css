@@ -7,10 +7,10 @@
     --gold-hover: #b59020;
     --bg-light: #f8fafc;         /* خلفية ناصعة ومريحة للقراءة */
     --white: #ffffff;
-    --whatsapp-green: #22c55e;   /* أخضر واتساب الرسمي */
+    --whatsapp-green: #075e54;   /* [تعديل تباين]: تعديل درجة أخضر واتساب للأخضر الداكن الرسمي لضمان تحقيق تباين 4.5:1 مع النص الأبيض */
     --call-red: #dc2626;         /* أحمر الاتصال لجذب الانتباه */
     --text-dark: #1e293b;
-    --text-muted: #475569;       /* [تعديل تباين]: تعديل الدرجة من #64748b إلى #475569 لضمان وضوح القراءة للعين واجتياز فحص المنظمات العالمية للوصول */
+    --text-muted: #475569;       /* [تعديل تباين]: تعديل الدرجة لضمان وضوح القراءة للعين واجتياز فحص المنظمات العالمية للوصول */
     --border-color: #cbd5e1;
     --transition-speed: 0.25s;
     --font-main: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
@@ -133,7 +133,7 @@ a {
     color: var(--gold-color);
 }
 
-/* [تعديل الأداء]: تحويل طريقة تحريك القائمة لاستخدام transform بدلاً من right لتشغيلها عبر كرت الشاشة (GPU) مباشرة ومنع أي تعليق بالجوال */
+/* قائمة الجوال (تفتح كدرج جانبي مرن) */
 .nav-menu {
     position: fixed;
     top: 0;
@@ -232,7 +232,7 @@ a {
         display: flex;
         flex-direction: row;
         align-items: center;
-        transform: translateX(0); /* إلغاء التحريك في الشاشات الكبيرة */
+        transform: translateX(0);
     }
     .nav-links {
         flex-direction: row;
@@ -357,7 +357,8 @@ a {
     .footer-grid { grid-template-columns: 1.2fr 1fr 1fr; }
 }
 
-.footer-col h4 {
+/* [تعديل هيكلية الفوتر]: تحويل العنوان في الفوتر ليتطابق مع الـ h3 في الـ HTML لضمان تسلسل العناوين */
+.footer-col h3 {
     color: var(--white);
     font-size: 1.1rem;
     margin-bottom: 15px;
@@ -366,7 +367,7 @@ a {
     font-weight: 800;
 }
 
-.footer-col h4::after {
+.footer-col h3::after {
     content: '';
     position: absolute;
     bottom: 0;
